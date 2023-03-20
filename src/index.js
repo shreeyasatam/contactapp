@@ -1,0 +1,13 @@
+import React from "react";
+import * as ReactDOMClient from 'react-dom/client';
+import App from "./components/App";
+
+
+const container = document.getElementById('root');
+const root = ReactDOMClient.createRoot(container);
+root.render(<App tab="home" />);
+root.render(<App tab="profile" />);
+
+// ReactDOM.render(<App />, document.getElementById("root"));
+
+
