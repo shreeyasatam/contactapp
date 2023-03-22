@@ -1,6 +1,6 @@
 import React from "react";
 
-function UserData({contacts}){
+function UserData(props){
     
 
    
@@ -9,7 +9,7 @@ function UserData({contacts}){
     return(
     <>  
         {
-            contacts.map((contact)=>{
+            props.contacts.map((contact)=>{
                 const {id, name, email,} = contact;
                 const {street, city, zipcode} = contact.address
 
