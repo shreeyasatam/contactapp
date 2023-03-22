@@ -10,7 +10,7 @@ function UserData({contacts}){
     <>  
         {
             contacts.map((contact)=>{
-                const {id, name, email, address} = contact;
+                const {id, name, email,} = contact;
                 const {street, city, zipcode} = contact.address
 
                 return(
